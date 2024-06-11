@@ -26,7 +26,7 @@ Creating the Simon Says game helped me deepen my understanding of:
 - **CSS Animations**: Applying CSS transitions and animations to create a visually appealing and engaging user experience.
 
 # To play this game click on the play button:
-[Play](https://opdsbanasya.github.io/simon-game/) 
+# [Play](https://opdsbanasya.github.io/simon-game/) 
 
 # How to Play Simon Says Game
 
