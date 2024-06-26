@@ -7,10 +7,20 @@ let level = 0;
 let highScore = 0;
 let h2 = document.querySelector('h2');
 let hs = document.createElement("p");
+
+let playbtn = document.querySelector("#play");
+
 h2.before(hs,"");
 hs.style.fontSize = "1.5rem"; 
 
 document.addEventListener("keypress", () => {
+    if (started == false) {
+        // console.log("game started")
+        started = true;
+    }
+    levelUp();
+})
+playbtn.addEventListener("keypress", () => {
     if (started == false) {
         // console.log("game started")
         started = true;
