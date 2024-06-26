@@ -20,7 +20,7 @@ document.addEventListener("keypress", () => {
     }
     levelUp();
 })
-playbtn.addEventListener("keypress", () => {
+playbtn.addEventListener("click", () => {
     if (started == false) {
         // console.log("game started")
         started = true;
