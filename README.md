@@ -25,10 +25,10 @@ Creating the Simon Says game helped me deepen my understanding of:
 - **Game Logic Implementation**: Developing the logic to generate random sequences, track player progress, and determine game states.
 - **CSS Animations**: Applying CSS transitions and animations to create a visually appealing and engaging user experience.
 
-# To play this game click on the play button:
-# [Play](https://opdsbanasya.github.io/simon-game/) 
+## To play this game click on the play button:
+<img src="/assets/play.png" style="size:40px" onClick="https://opdsbanasya.github.io/simon-game/"/>
 
-# To add into your browser as an extension follow the steps below:
+## To add into your browser as an extension follow the steps below:
 - Open the terminal and clone the repository using the command below:
 ```bash
 git clone https://github.com/opdsbanasya/simon-game.git
