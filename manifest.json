@@ -1,0 +1,15 @@
+{
+    "name": "Simon Game",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "A simple Simon Game",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "game.png"
+        }
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
