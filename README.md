@@ -28,6 +28,16 @@ Creating the Simon Says game helped me deepen my understanding of:
 # To play this game click on the play button:
 # [Play](https://opdsbanasya.github.io/simon-game/) 
 
+# To add into your browser as an extension follow the steps below:
+- Open the terminal and clone the repository using the command below:
+```bash
+git clone https://github.com/opdsbanasya/simon-game.git
+```
+- Open the browser and type `chrome://extensions/` in the address bar.
+- Turn on the developer mode.
+- Click on the `Load unpacked` button and select the folder where the repository is cloned.
+- The extension will be added to the browser.
+
 # How to Play Simon Says Game
 
 Simon Says is a classic memory game where players must follow a sequence of colors and sounds. The game will test and improve your memory as you progress through increasing levels of difficulty. Here’s how to play:
