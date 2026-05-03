@@ -8,24 +8,22 @@ let highScore = 0;
 let h2 = document.querySelector('h2');
 let hs = document.createElement("p");
 
-let playbtn = document.querySelector("#play");
+let playbtn = document.querySelector("#playBtn");
 
 h2.before(hs,"");
 hs.style.fontSize = "1.5rem"; 
 
 document.addEventListener("keypress", () => {
     if (started == false) {
-        // console.log("game started")
         started = true;
+        levelUp();
     }
-    levelUp();
 })
 playbtn.addEventListener("click", () => {
     if (started == false) {
-        // console.log("game started")
         started = true;
+        levelUp();
     }
-    levelUp();
 })
 function gameFlash(btn) {
     btn.classList.add("flash");
@@ -47,7 +45,7 @@ function levelUp() {
         highScore = level;
     }
     // random btn choose
-    let ranIdx = Math.floor(Math.random() * 3)
+    let ranIdx = Math.floor(Math.random() * btns.length);
     let ranColor = btns[ranIdx];
     let ranBtn = document.querySelector(`.${ranColor}`);
     // console.log(ranColor);
@@ -65,7 +63,7 @@ function highScor(highScore) {
 function checkAns(idx) {
     // console.log("curr level : ",level);
     // let idx = level-1;
-    if (userSeq[idx] === gameSeq[[idx]]) {
+    if (userSeq[idx] === gameSeq[idx]) {
         // console.log("same val");
         if (userSeq.length == gameSeq.length) {
             setTimeout(levelUp, 1000);
@@ -75,7 +73,7 @@ function checkAns(idx) {
         let gameOver = document.querySelector("body");
         gameOver.style.backgroundColor = "red";
         setTimeout(function () {
-            gameOver.style.backgroundColor = "white";
+            gameOver.style.backgroundColor = "";
         }, 250);
         reset();
     }
@@ -85,12 +83,13 @@ function checkAns(idx) {
 
 // * humne yha bhut sare btn vars declre kr liye but ye clash nhi karenge bcoz sare btns ka apna ek alg scope h
 function btnPress() {
+    if (!started) return;
     // console.log("btn was pressed")
     // console.log(this)
     let btn = this;
     userFlash(btn);
 
-    userColor = btn.getAttribute("id");
+    let userColor = btn.getAttribute("id");
     // console.log(userColor);
     userSeq.push(userColor);
     console.log("us", userSeq);
